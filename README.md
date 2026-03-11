@@ -22,22 +22,7 @@ Unlike standard PWM servos, the SC15 motors provide:
 
 ---
 
-## 📂 Repository Structure
 
-```text
-Hexa-pod_v1/
-├── firmware/           # ESP32 Source Code (Arduino/PlatformIO)
-│   ├── src/            # Core Inverse Kinematics & Gait Engine
-│   └── calibration/    # Servo ID assignment & Neutral offset tools
-├── urdf/               # Robot Description & Visualization
-│   ├── robot/          # Generated .urdf file
-│   └── meshes/         # STL files for Coxa, Femur, and Tibia links
-├── hardware/           # Physical Design Documentation
-│   ├── pcb/            # Gerber files and schematics for the Power PCB
-│   └── cad/            # 3D Assembly and individual part files
-├── software/           # Python-based Gait Simulation / IK Testing
-└── docs/               # Wiring diagrams and SC15 protocol specs
-```
 ---
 
 
