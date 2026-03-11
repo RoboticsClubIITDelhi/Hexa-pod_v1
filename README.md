@@ -1,11 +1,70 @@
-# Hexa-pod_v1  
-**Freshers 2026 Project**  
-**Project Title:** Hexabot with 18 Degrees of Freedom (6 legs × 3 joints per leg)
+# 🕷️ Hexapod v1 | Robotics Club IIT Delhi
+
+The **Hexapod v1** is an advanced 6-legged walking robot featuring 18 Degrees of Freedom (3-DOF per leg), developed under the **OPENARM** project ecosystem. This iteration focuses on high-torque serial bus actuation and a streamlined ESP32-based control architecture.
 
 ---
 
-## Week 1: Foundations – Design, Electronics & Strength Analysis
+## 🏗️ Hardware Architecture
 
-### Objective of Week 1
-Week 1 focuses on building **core technical foundations** required to design, analyze, and later fabricate the hexapod.  
-No physical construction is expected at this
+### 1. Actuators: Waveshare SC15 Serial Bus Servos
+Unlike standard PWM servos, the SC15 motors provide:
+* **Daisy-Chained Wiring:** Only one data line is needed per leg (or even the whole body), drastically reducing cable clutter.
+* **Two-way Feedback:** Real-time monitoring of position, speed, torque, voltage, and temperature.
+* **Precision:** 17kg.cm stall torque with 0.16° position resolution.
+
+### 2. Controller: Waveshare ESP32 Servo Driver Board
+* **Module:** ESP32-WROOM-32.
+* **Features:** Integrated serial bus servo interface, Wi-Fi/Bluetooth connectivity for remote operation, and an onboard OLED header for status debugging.
+
+### 3. Power System
+* **Custom Power PCB:** A bespoke power distribution board designed to channel high current to 24 servos, preventing voltage drops during high-torque maneuvers.
+
+
+---
+
+## 📂 Repository Structure
+
+```text
+Hexa-pod_v1/
+├── firmware/           # ESP32 Source Code (Arduino/PlatformIO)
+│   ├── src/            # Core Inverse Kinematics & Gait Engine
+│   └── calibration/    # Servo ID assignment & Neutral offset tools
+├── urdf/               # Robot Description & Visualization
+│   ├── robot/          # Generated .urdf file
+│   └── meshes/         # STL files for Coxa, Femur, and Tibia links
+├── hardware/           # Physical Design Documentation
+│   ├── pcb/            # Gerber files and schematics for the Power PCB
+│   └── cad/            # 3D Assembly and individual part files
+├── software/           # Python-based Gait Simulation / IK Testing
+└── docs/               # Wiring diagrams and SC15 protocol specs
+```
+---
+
+
+## 👥 Team & Mentorship
+
+### 🎓 Mentors
+The project is developed under the expert guidance of our faculty mentors at IIT Delhi:
+
+| Name | Designation | Role |
+| :--- | :--- | :--- |
+| **Raj Gowtham** | Btech 2nd Year | Lead Advisor |
+| **[Mentor Name]** | [Designation] | Technical Consultant |
+
+---
+
+### 🛠️ Core Project Team
+A multidisciplinary team of students from the **Robotics Club, IIT Delhi** is responsible for the design, simulation, and fabrication of the Hexapod.
+
+| Name | Role | Core Responsibility |
+| :--- | :--- | :--- |
+| **Nikhil** | **Mechanical** | CAD Design, URDF Export & Mesh Optimization |
+| **Vijay** | **Mechanical** | CAD Design, URDF Export & Mesh Optimization |
+| **Gyan** | **Mechanical and PCB** | CAD Design, Power PCB design |
+| **Vanshika** | **Mechanical and PCB** | CAD Design, Power PCB design |
+| **Uday** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+| **Harshita** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+| **Kartikey** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+| **Pranav** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+| **Akshara** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+---

@@ -1,0 +1,1207 @@
+<?xml version="1.0" ?>
+<robot name="assembly_Final_urdf_made_of" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find assembly_Final_urdf_made_of_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find assembly_Final_urdf_made_of_description)/urdf/assembly_Final_urdf_made_of.trans" />
+<xacro:include filename="$(find assembly_Final_urdf_made_of_description)/urdf/assembly_Final_urdf_made_of.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.7404090197208611e-06 2.397418554504474e-06 0.0008277383370028244" rpy="0 0 0"/>
+    <mass value="0.09456404470336192"/>
+    <inertia ixx="0.000152" iyy="0.000152" izz="0.000303" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_1">
+  <inertial>
+    <origin xyz="0.010972805738787339 0.010956586754343384 5.977675751611677e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="7e-06" ixy="1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.069586 -0.128526 -0.02295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.069586 -0.128526 -0.02295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_1">
+  <inertial>
+    <origin xyz="-0.018338093053048496 0.01677782396606542 0.007656049817158811" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.5e-05" iyy="1.8e-05" izz="1.6e-05" ixy="2e-06" iyz="-3e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.11437 -0.145394 -0.02295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.11437 -0.145394 -0.02295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_1">
+  <inertial>
+    <origin xyz="-0.00945987008689668 0.025185382841864723 0.009101924812263344" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="4e-06" iyy="7e-06" izz="8e-06" ixy="2e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.111615 -0.153623 -0.043365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.111615 -0.153623 -0.043365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_1">
+  <inertial>
+    <origin xyz="0.011012566806815144 0.0190746967865109 -0.026374619114394995" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="7e-06" iyy="6e-06" izz="3e-06" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05455 -0.094483 -0.0493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05455 -0.094483 -0.0493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_2">
+  <inertial>
+    <origin xyz="-0.01719037699469063 0.018765054863949443 -0.005361299149472275" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="1.6e-05" izz="1.9e-05" ixy="1e-06" iyz="3e-06" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.135634 -0.182625 -0.048627" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.135634 -0.182625 -0.048627" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_1">
+  <inertial>
+    <origin xyz="-0.019518933007596523 0.006065157536419535 -0.033090882230042445" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="1.8e-05" iyy="1.7e-05" izz="1.2e-05" ixy="-0.0" iyz="-5e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.141072 -0.205043 -0.033129" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.141072 -0.205043 -0.033129" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_1">
+  <inertial>
+    <origin xyz="0.002581790431811941 0.019471284014795517 0.022030159006889604" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2e-05" iyy="1.6e-05" izz="1.3e-05" ixy="-4e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.047295 -0.066918 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.047295 -0.066918 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_2">
+  <inertial>
+    <origin xyz="-0.015571919355655897 0.01197120958057929 0.02223015900688976" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2e-05" iyy="1.6e-05" izz="1.3e-05" ixy="4e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.034305 -0.074418 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.034305 -0.074418 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_3">
+  <inertial>
+    <origin xyz="-0.01815370978746779 -0.007500074434216389 0.022230159006889492" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="2.2e-05" izz="1.3e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0816 -0.0075 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0816 -0.0075 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_4">
+  <inertial>
+    <origin xyz="-0.015571790431811977 -0.011971284014795608 0.02223015900688932" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2e-05" iyy="1.6e-05" izz="1.3e-05" ixy="-4e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.034305 0.074418 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.034305 0.074418 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_5">
+  <inertial>
+    <origin xyz="0.0025819193556557984 -0.019471209580579282 0.0222301590068896" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2e-05" iyy="1.6e-05" izz="1.3e-05" ixy="4e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.047295 0.066918 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.047295 0.066918 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link_motor_6">
+  <inertial>
+    <origin xyz="0.018153709787467803 -0.007499925565783629 0.022230159006889502" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="2.2e-05" izz="1.3e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0816 -0.0075 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0816 -0.0075 -0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_link_motor_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_6">
+  <inertial>
+    <origin xyz="0.022025133615776515 1.2398237991817496e-12 -0.02637461911439507" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="6e-06" iyy="7e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1091 0.0 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1091 0.0 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_5">
+  <inertial>
+    <origin xyz="0.011012566808961316 -0.019074696785271378 -0.02637461911439472" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="7e-06" iyy="6e-06" izz="3e-06" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05455 0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05455 0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_4">
+  <inertial>
+    <origin xyz="-0.011012566806815074 -0.01907469678651111 -0.026374619114395238" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="7e-06" iyy="6e-06" izz="3e-06" ixy="-1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05455 0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05455 0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_3">
+  <inertial>
+    <origin xyz="-0.022025133615776515 -1.2398482240882913e-12 -0.026374619114395044" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="6e-06" iyy="7e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1091 0.0 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1091 0.0 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="fixed_joint_2_2">
+  <inertial>
+    <origin xyz="-0.011012566808961441 0.019074696785271475 -0.02637461911439456" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="7e-06" iyy="6e-06" izz="3e-06" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05455 -0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05455 -0.094483 -0.0495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/fixed_joint_2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_6">
+  <inertial>
+    <origin xyz="0.01497486638422238 0.0039753208853297705 5.977675755775014e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="6e-06" iyy="3e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1461 0.004 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1461 0.004 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_5">
+  <inertial>
+    <origin xyz="0.010930060451863191 -0.01098126575725572 5.977675810245331e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="7e-06" ixy="-1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.069586 0.128526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.069586 0.128526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_4">
+  <inertial>
+    <origin xyz="-0.00404480593235905 -0.014956586642585423 5.977675746754452e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="7e-06" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.076514 0.124526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.076514 0.124526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_3">
+  <inertial>
+    <origin xyz="-0.014974866384222324 -0.003975320885329802 5.977675756468903e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="6e-06" iyy="3e-06" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1461 -0.004 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1461 -0.004 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Fixed_joint_1_2__v3_2">
+  <inertial>
+    <origin xyz="-0.010930060451863288 0.010981265757255804 5.977675827592566e-08" rpy="0 0 0"/>
+    <mass value="0.011256598883823797"/>
+    <inertia ixx="3e-06" iyy="5e-06" izz="7e-06" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.069586 -0.128526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.069586 -0.128526 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Fixed_joint_1_2__v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_12">
+  <inertial>
+    <origin xyz="7.44342152081412e-08 -0.027930219007164792 0.009346349989289817" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2.2e-05" iyy="1.3e-05" izz="1.4e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1831 -0.02635 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1831 -0.02635 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_10">
+  <inertial>
+    <origin xyz="-0.024188472586640808 -0.013965425398434372 0.009346349989290414" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.6e-05" iyy="2e-05" izz="1.4e-05" ixy="-4e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.11437 0.145394 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.11437 0.145394 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_8">
+  <inertial>
+    <origin xyz="-0.02418854702085596 0.013964793608730514 0.009346349989289699" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.6e-05" iyy="2e-05" izz="1.4e-05" ixy="4e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06873 0.171744 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06873 0.171744 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_6">
+  <inertial>
+    <origin xyz="-7.443421529140792e-08 0.027930219007164785 0.00934634998928974" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="2.2e-05" iyy="1.3e-05" izz="1.4e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1831 0.02635 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1831 0.02635 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_4">
+  <inertial>
+    <origin xyz="0.02418847258664078 0.013965425398434345 0.009346349989290573" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.6e-05" iyy="2e-05" izz="1.4e-05" ixy="-4e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.11437 -0.145394 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.11437 -0.145394 -0.02315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_2">
+  <inertial>
+    <origin xyz="0.012437498716422149 0.017886558222365567 0.008773705887538806" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="4e-06" iyy="7e-06" izz="8e-06" ixy="-2e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105683 -0.141749 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105683 -0.141749 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_3">
+  <inertial>
+    <origin xyz="-0.009271199409668168 0.019714806210989276 0.008773705887537876" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="8e-06" iyy="3e-06" izz="8e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.1756 0.02065 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.1756 0.02065 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_4">
+  <inertial>
+    <origin xyz="-0.02170869812608997 0.0018282479886237435 0.008773705887537925" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="4e-06" iyy="7e-06" izz="8e-06" ixy="2e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.069917 0.162399 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.069917 0.162399 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_5">
+  <inertial>
+    <origin xyz="-0.012437498716422135 -0.017886558222365623 0.008773705887538605" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="4e-06" iyy="7e-06" izz="8e-06" ixy="-2e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105683 0.141749 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105683 0.141749 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint_2_v7_6">
+  <inertial>
+    <origin xyz="0.009271199409667835 -0.019714806210989286 0.008773705887537925" rpy="0 0 0"/>
+    <mass value="0.014244669754106336"/>
+    <inertia ixx="8e-06" iyy="3e-06" izz="8e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1756 -0.02065 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1756 -0.02065 -0.05065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/Joint_2_v7_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_9">
+  <inertial>
+    <origin xyz="0.02569156523859202 0.004041246787759106 -1.1382225389988676e-07" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="1.4e-05" izz="2.2e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0791 0.189306 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0791 0.189306 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_3">
+  <inertial>
+    <origin xyz="-0.025691565238591896 -0.004041246787759356 -1.1382225365008658e-07" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="1.4e-05" izz="2.2e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0791 -0.189306 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0791 -0.189306 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_2">
+  <inertial>
+    <origin xyz="-0.024909525025283083 0.0032715525317545957 -0.029691034679900245" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="1.9e-05" iyy="2e-05" izz="8e-06" ixy="-1e-06" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.098239 -0.209456 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.098239 -0.209456 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_11">
+  <inertial>
+    <origin xyz="0.00934676532695164 0.024269780992835173 -1.1382225471867624e-07" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="1.3e-05" izz="2.2e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.203493 0.02615 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.203493 0.02615 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_6">
+  <inertial>
+    <origin xyz="0.015288727090029958 0.019935974844602022 -0.02969103467990157" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="2.1e-05" iyy="1.8e-05" izz="8e-06" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.230513 0.01965 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.230513 0.01965 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_5">
+  <inertial>
+    <origin xyz="0.024909525025283097 -0.0032715525317547067 -0.029691034679900488" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="1.9e-05" iyy="2e-05" izz="8e-06" ixy="-1e-06" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.098239 0.209456 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.098239 0.209456 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_7">
+  <inertial>
+    <origin xyz="0.016344799911640326 -0.0202295342050757 -1.1382225459377615e-07" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.3e-05" iyy="1.4e-05" izz="2.2e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.124393 0.163155 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.124393 0.163155 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_4">
+  <inertial>
+    <origin xyz="0.009620797935253028 -0.02320852737635637 -0.029691034679901383" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="1.9e-05" iyy="2e-05" izz="8e-06" ixy="1e-06" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.132274 0.189805 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.132274 0.189805 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_5">
+  <inertial>
+    <origin xyz="-0.009346765326952056 -0.024269780992835194 -1.1382225477418739e-07" rpy="0 0 0"/>
+    <mass value="0.07982237365097052"/>
+    <inertia ixx="1.4e-05" iyy="1.3e-05" izz="2.2e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.203493 -0.02615 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.203493 -0.02615 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/motor_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="leg_final_final_final_v2_3">
+  <inertial>
+    <origin xyz="-0.015288727090030457 -0.019935974844602078 -0.02969103467990159" rpy="0 0 0"/>
+    <mass value="0.020390738062841383"/>
+    <inertia ixx="2.1e-05" iyy="1.8e-05" izz="8e-06" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.230513 -0.01965 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.230513 -0.01965 -0.067775" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/leg_final_final_final_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_top_2_v2_1">
+  <inertial>
+    <origin xyz="0.04103999999999869 0.07108299999999992 0.0024999999999999745" rpy="0 0 0"/>
+    <mass value="0.10314360336964361"/>
+    <inertia ixx="0.000172" iyy="0.000172" izz="0.000343" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04104 0.071083 -0.043" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_top_2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04104 0.071083 -0.043" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://assembly_Final_urdf_made_of_description/meshes/base_top_2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="0.015036 0.034043 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_1"/>
+  <child link="Fixed_joint_1_2__v3_1"/>
+</joint>
+
+<joint name="L1_2" type="continuous">
+  <origin xyz="0.044784 0.016868 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_1"/>
+  <child link="motor_1"/>
+  <axis xyz="0.866025 -0.5 -0.0"/>
+</joint>
+
+<joint name="Rigid 4" type="fixed">
+  <origin xyz="-0.002755 0.008229 0.020415" rpy="0 0 0"/>
+  <parent link="motor_1"/>
+  <child link="Joint_2_v7_1"/>
+</joint>
+
+<joint name="L1_1" type="continuous">
+  <origin xyz="0.007255 0.027565 0.0463" rpy="0 0 0"/>
+  <parent link="base_link_motor_1"/>
+  <child link="fixed_joint_2_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="L1_3" type="continuous">
+  <origin xyz="0.024019 0.029002 0.005262" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_1"/>
+  <child link="motor_2"/>
+  <axis xyz="0.866025 -0.5 -0.0"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="0.005438 0.022418 -0.015498" rpy="0 0 0"/>
+  <parent link="motor_2"/>
+  <child link="leg_final_final_final_v2_1"/>
+</joint>
+
+<joint name="Rigid 22" type="fixed">
+  <origin xyz="0.047295 0.066918 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_1"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="-0.034305 0.074418 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_2"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="-0.0816 0.0075 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_3"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="-0.034305 -0.074418 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_4"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="0.047295 -0.066918 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_5"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.0816 0.0075 0.003" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link_motor_6"/>
+</joint>
+
+<joint name="Revolute 59" type="continuous">
+  <origin xyz="0.0275 -0.0075 0.0465" rpy="0 0 0"/>
+  <parent link="base_link_motor_6"/>
+  <child link="fixed_joint_2_6"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 60" type="continuous">
+  <origin xyz="0.007255 -0.027565 0.0465" rpy="0 0 0"/>
+  <parent link="base_link_motor_5"/>
+  <child link="fixed_joint_2_5"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 61" type="continuous">
+  <origin xyz="-0.020245 -0.020065 0.0465" rpy="0 0 0"/>
+  <parent link="base_link_motor_4"/>
+  <child link="fixed_joint_2_4"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 62" type="continuous">
+  <origin xyz="-0.0275 -0.0075 0.0465" rpy="0 0 0"/>
+  <parent link="base_link_motor_3"/>
+  <child link="fixed_joint_2_3"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 63" type="continuous">
+  <origin xyz="-0.020245 0.020065 0.0465" rpy="0 0 0"/>
+  <parent link="base_link_motor_2"/>
+  <child link="fixed_joint_2_2"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 64" type="fixed">
+  <origin xyz="0.037 -0.004 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_6"/>
+  <child link="Fixed_joint_1_2__v3_6"/>
+</joint>
+
+<joint name="Rigid 65" type="fixed">
+  <origin xyz="0.015036 -0.034043 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_5"/>
+  <child link="Fixed_joint_1_2__v3_5"/>
+</joint>
+
+<joint name="Rigid 66" type="fixed">
+  <origin xyz="-0.021964 -0.030043 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_4"/>
+  <child link="Fixed_joint_1_2__v3_4"/>
+</joint>
+
+<joint name="Rigid 67" type="fixed">
+  <origin xyz="-0.037 0.004 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_3"/>
+  <child link="Fixed_joint_1_2__v3_3"/>
+</joint>
+
+<joint name="Rigid 68" type="fixed">
+  <origin xyz="-0.015036 0.034043 -0.02635" rpy="0 0 0"/>
+  <parent link="fixed_joint_2_2"/>
+  <child link="Fixed_joint_1_2__v3_2"/>
+</joint>
+
+<joint name="Revolute 69" type="continuous">
+  <origin xyz="0.037 0.03035 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_6"/>
+  <child link="motor_12"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 70" type="continuous">
+  <origin xyz="0.044784 -0.016868 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_5"/>
+  <child link="motor_10"/>
+  <axis xyz="0.866025 0.5 0.0"/>
+</joint>
+
+<joint name="Revolute 71" type="continuous">
+  <origin xyz="0.007784 -0.047218 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_4"/>
+  <child link="motor_8"/>
+  <axis xyz="0.866025 -0.5 0.0"/>
+</joint>
+
+<joint name="Revolute 72" type="continuous">
+  <origin xyz="-0.037 -0.03035 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_3"/>
+  <child link="motor_6"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 73" type="continuous">
+  <origin xyz="-0.044784 0.016868 0.0" rpy="0 0 0"/>
+  <parent link="Fixed_joint_1_2__v3_2"/>
+  <child link="motor_4"/>
+  <axis xyz="-0.866025 -0.5 0.0"/>
+</joint>
+
+<joint name="Rigid 74" type="fixed">
+  <origin xyz="0.008687 -0.003645 0.0275" rpy="0 0 0"/>
+  <parent link="motor_4"/>
+  <child link="Joint_2_v7_2"/>
+</joint>
+
+<joint name="Rigid 75" type="fixed">
+  <origin xyz="0.0075 0.0057 0.0275" rpy="0 0 0"/>
+  <parent link="motor_6"/>
+  <child link="Joint_2_v7_3"/>
+</joint>
+
+<joint name="Rigid 76" type="fixed">
+  <origin xyz="-0.001187 0.009345 0.0275" rpy="0 0 0"/>
+  <parent link="motor_8"/>
+  <child link="Joint_2_v7_4"/>
+</joint>
+
+<joint name="Rigid 77" type="fixed">
+  <origin xyz="-0.008687 0.003645 0.0275" rpy="0 0 0"/>
+  <parent link="motor_10"/>
+  <child link="Joint_2_v7_5"/>
+</joint>
+
+<joint name="Rigid 78" type="fixed">
+  <origin xyz="-0.0075 -0.0057 0.0275" rpy="0 0 0"/>
+  <parent link="motor_12"/>
+  <child link="Joint_2_v7_6"/>
+</joint>
+
+<joint name="Revolute 80" type="continuous">
+  <origin xyz="-0.026583 -0.047557 0.017125" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_5"/>
+  <child link="motor_9"/>
+  <axis xyz="-0.866025 -0.5 -0.0"/>
+</joint>
+
+<joint name="Revolute 90" type="continuous">
+  <origin xyz="0.026583 0.047557 0.017125" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_2"/>
+  <child link="motor_3"/>
+  <axis xyz="0.866025 0.5 -0.0"/>
+</joint>
+
+<joint name="Rigid 91" type="fixed">
+  <origin xyz="-0.019139 0.02015 0.0" rpy="0 0 0"/>
+  <parent link="motor_3"/>
+  <child link="leg_final_final_final_v2_2"/>
+</joint>
+
+<joint name="Revolute 92" type="continuous">
+  <origin xyz="0.027893 -0.0468 0.017125" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_6"/>
+  <child link="motor_11"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 93" type="fixed">
+  <origin xyz="0.02702 0.0065 0.0" rpy="0 0 0"/>
+  <parent link="motor_11"/>
+  <child link="leg_final_final_final_v2_6"/>
+</joint>
+
+<joint name="Rigid 94" type="fixed">
+  <origin xyz="0.019139 -0.02015 0.0" rpy="0 0 0"/>
+  <parent link="motor_9"/>
+  <child link="leg_final_final_final_v2_5"/>
+</joint>
+
+<joint name="Revolute 95" type="continuous">
+  <origin xyz="-0.054476 -0.000756 0.017125" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_4"/>
+  <child link="motor_7"/>
+  <axis xyz="-0.866025 0.5 -0.0"/>
+</joint>
+
+<joint name="Rigid 96" type="fixed">
+  <origin xyz="-0.007881 -0.02665 0.0" rpy="0 0 0"/>
+  <parent link="motor_7"/>
+  <child link="leg_final_final_final_v2_4"/>
+</joint>
+
+<joint name="Revolute 97" type="continuous">
+  <origin xyz="-0.027893 0.0468 0.017125" rpy="0 0 0"/>
+  <parent link="Joint_2_v7_3"/>
+  <child link="motor_5"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 98" type="fixed">
+  <origin xyz="-0.02702 -0.0065 0.0" rpy="0 0 0"/>
+  <parent link="motor_5"/>
+  <child link="leg_final_final_final_v2_3"/>
+</joint>
+
+<joint name="Rigid 99" type="fixed">
+  <origin xyz="-0.006735 0.003335 0.04" rpy="0 0 0"/>
+  <parent link="base_link_motor_4"/>
+  <child link="base_top_2_v2_1"/>
+</joint>
+
+</robot>
