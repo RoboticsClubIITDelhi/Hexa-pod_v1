@@ -1,6 +1,6 @@
 # 🕷️ Hexapod v1 | Robotics Club IIT Delhi
 
-The **Hexapod v1** is an advanced 6-legged walking robot featuring 18 Degrees of Freedom (3-DOF per leg), developed under the **OPENARM** project ecosystem. This iteration focuses on high-torque serial bus actuation and a streamlined ESP32-based control architecture.
+The **Hexapod v1** is an advanced 6-legged walking robot featuring 18 Degrees of Freedom (3-DOF per leg).This iteration focuses on high-torque serial bus actuation and a streamlined ESP32-based control architecture.
 
 ---
 
@@ -43,13 +43,13 @@ A multidisciplinary team of students from the **Robotics Club, IIT Delhi** is re
 
 | Name | Role | Core Responsibility |
 | :--- | :--- | :--- |
-| **Nikhil** | **Mechanical** | CAD Design, URDF Export & Mesh Optimization |
-| **Vijay** | **Mechanical** | CAD Design, URDF Export & Mesh Optimization |
+| **Nikhil** | **Mechanical** | CAD Design, URDF Export |
+| **Vijay** | **Mechanical** | CAD Design, URDF Export |
 | **Gyan** | **Mechanical and PCB** | CAD Design, Power PCB design |
 | **Vanshika** | **Mechanical and PCB** | CAD Design, Power PCB design |
-| **Uday** | **Simulation** | PyBullet Environment & Digital Twin Validation |
-| **Harshita** | **Simulation** | PyBullet Environment & Digital Twin Validation |
-| **Kartikey** | **Simulation** | PyBullet Environment & Digital Twin Validation |
-| **Pranav** | **Simulation** | PyBullet Environment & Digital Twin Validation |
-| **Akshara** | **Simulation** | PyBullet Environment & Digital Twin Validation |
+| **Uday** | **Simulation** | PyBullet Environment & Gait Cycle |
+| **Harshita** | **Simulation** | PyBullet Environment & Gait Cycle |
+| **Kartikey** | **Simulation** | PyBullet Environment & Gait Cycle |
+| **Pranav** | **Simulation** | PyBullet Environment & Gait Cycle |
+| **Akshara** | **Simulation** | PyBullet Environment & Gait Cycle|
 ---
