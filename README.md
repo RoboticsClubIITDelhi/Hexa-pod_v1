@@ -33,8 +33,8 @@ The project is developed under the expert guidance of our faculty mentors at IIT
 
 | Name | Designation | Role |
 | :--- | :--- | :--- |
-| **Raj Gowtham** | Btech 2nd Year | Lead Advisor |
-| **[Mentor Name]** | [Designation] | Technical Consultant |
+| **Raj Gowtham** | Btech 2nd Year | Lead Advisor, MECHANICAL|
+| **Shivanshu aryan** | Btech 2nd Year| Lead Advisor, SIMULATION |
 
 ---
 
