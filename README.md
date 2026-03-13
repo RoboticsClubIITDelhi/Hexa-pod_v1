@@ -41,15 +41,16 @@ The project is developed under the expert guidance of our faculty mentors at IIT
 ### 🛠️ Core Project Team
 A multidisciplinary team of students from the **Robotics Club, IIT Delhi** is responsible for the design, simulation, and fabrication of the Hexapod.
 
+* CURRENTLY
 | Name | Role | Core Responsibility |
 | :--- | :--- | :--- |
 | **Nikhil** | **Mechanical** | CAD Design, URDF Export |
 | **Vijay** | **Mechanical** | CAD Design, URDF Export |
 | **Gyan** | **Mechanical and PCB** | CAD Design, Power PCB design |
 | **Vanshika** | **Mechanical and PCB** | CAD Design, Power PCB design |
-| **Uday** | **Simulation** | PyBullet Environment & Gait Cycle |
-| **Harshita** | **Simulation** | PyBullet Environment & Gait Cycle |
-| **Kartikey** | **Simulation** | PyBullet Environment & Gait Cycle |
-| **Pranav** | **Simulation** | PyBullet Environment & Gait Cycle |
-| **Akshara** | **Simulation** | PyBullet Environment & Gait Cycle|
+| **Uday** | **Simulation** | PyBullet Environment & Inverse Kinematics |
+| **Harshita** | **Simulation** | PyBullet Environment & Inverse Kinematics|
+| **Kartikey** | **Simulation** | PyBullet Environment & Inverse Kinematics |
+| **Pranav** | **Simulation** | PyBullet Environment & Inverse Kinematics |
+| **Akshara** | **Simulation** | PyBullet Environment & Inverse Kinematics|
 ---
